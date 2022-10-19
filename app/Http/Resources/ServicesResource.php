@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class VideoPostResource extends JsonResource
+class ServicesResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -14,15 +14,13 @@ class VideoPostResource extends JsonResource
      */
     public function toArray($request)
     {
-
         return [
-            'id' => $this->id,
-            'title' => $this->title,
-            'author' => $this->author,
-            'description' => $this->description,
-            'video' => $this->video,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
+
+            'id'=>$this->id,
+            'name'=>$this->name,
+            'description'=>$this->description,
+            'created_at'=>$this->created_at,
+            'updated_at'=>$this->updated_at,
         ];
     }
 }

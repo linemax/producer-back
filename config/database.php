@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Database\DBAL\TimestampType;
 use Illuminate\Support\Str;
 
 return [
@@ -14,6 +15,12 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
+
+    'dbal' => [
+        'types' => [
+            'timestamp' => TimestampType::class,
+        ],
+    ],
 
     'default' => env('DB_CONNECTION', 'mysql'),
 

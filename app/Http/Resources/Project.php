@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class VideoPost extends ResourceCollection
+class Project extends ResourceCollection
 {
     /**
      * Transform the resource collection into an array.
@@ -16,8 +16,9 @@ class VideoPost extends ResourceCollection
     {
         return [
             'data'=>$this->collection,
-            'links' => [
-                'self' => 'link-value',]
+            'links'=>[
+                'self'=>'link-value',
+            ]
         ];
     }
 }

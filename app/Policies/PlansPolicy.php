@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
+use App\Models\Plans;
 use App\Models\User;
-use App\Models\VideoPost;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class VideoPostPolicy
+class PlansPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class VideoPostPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\VideoPost  $videoPost
+     * @param  \App\Models\Plans  $plans
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, VideoPost $videoPost)
+    public function view(User $user, Plans $plans)
     {
         //
     }
@@ -48,10 +48,10 @@ class VideoPostPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\VideoPost  $videoPost
+     * @param  \App\Models\Plans  $plans
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, VideoPost $videoPost)
+    public function update(User $user, Plans $plans)
     {
         //
     }
@@ -60,10 +60,10 @@ class VideoPostPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\VideoPost  $videoPost
+     * @param  \App\Models\Plans  $plans
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, VideoPost $videoPost)
+    public function delete(User $user, Plans $plans)
     {
         //
     }
@@ -72,10 +72,10 @@ class VideoPostPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\VideoPost  $videoPost
+     * @param  \App\Models\Plans  $plans
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, VideoPost $videoPost)
+    public function restore(User $user, Plans $plans)
     {
         //
     }
@@ -84,10 +84,10 @@ class VideoPostPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\VideoPost  $videoPost
+     * @param  \App\Models\Plans  $plans
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, VideoPost $videoPost)
+    public function forceDelete(User $user, Plans $plans)
     {
         //
     }
